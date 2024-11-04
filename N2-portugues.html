@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
+    <link type="text/css" href="css/v4/bootstrap.css" rel="stylesheet" media="all">
+    
+
+    
+    <title>Template-N2</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('thverde.jpg'); /* Cambia por la ruta de tu imagen de fondo */
+            background-size: cover;
+            color: #333;
+
+            
+        }
+
+        .header{
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 100%;
+            height:20%;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+            height:65%;
+        }
+
+        .card {
+            max-width: 300px;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+          background-size: cover;
+            height: 100px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: black; /* Fondo naranja */
+        }
+
+        
+
+
+        .dropdown {
+            position: fixed;
+            top: 20px; /* Distancia desde la parte superior */
+            right: 20px; /* Distancia desde la derecha */
+            z-index: 1; /* Asegurar que esté encima de otros elementos */
+        }
+
+        .dropdown button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color:green;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .language-option {
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .language-option:hover {
+            background-color: #efdfdf;
+        }
+
+        .language-option img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1 style="font-size: 55px; color: orangered;">N2-PORTUGUÊS</h1>
+</header>
+
+<main>
+    <div class="card">
+        <h2>HQ</h2>
+        <a href="HQ/Templates inicial/Template inicial.html" class="button">Template Inicial</a>
+        <a href="HQ/Eviar para N2/Enviar para N2.html" class="button">Envio para N2</a>
+        <a href="HQ/Cierre del Caso/Cierre del Caso.html" class="button">Fechar Ticket</a>
+    </div>
+
+    <div class="card">
+        <h2>Legal One</h2>
+        <a href="HQ/Templates inicial/Template inicial.html" class="button">Template Inicial</a>
+        <a href="HQ/Eviar para N2/Enviar para N2.html" class="button">Envio para N2</a>
+        <a href="HQ/Cierre del Caso/Cierre del Caso.html" class="button">Cierre del Ticket</a>
+    </div>
+
+   
+</main>
+
+<footer>
+    <img src="Thomson_Reuters_logo.svg.png" alt="" style="width: 600px; align-items: center;">
+</footer>
+
+
+
+
+<div class="dropdown">
+    <button>Selecionar idioma</button>
+    <div class="dropdown-content">
+        <a href="N2-Espanol.html" style="text-decoration: none;">
+            <div class="language-option">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Español">
+                Espanhol
+            </div>
+        </a>
+        <a href="N2-portugues.html" style="text-decoration: none;">
+            <div class="language-option">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Português">
+                Português
+            </div>
+        </a>
+        <a href="N2-Ingles.html" style="text-decoration: none;">
+            <div class="language-option">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English">
+                Inglês
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function changeLanguage() {
+        const lang = document.getElementById('language').value;
+        alert('Idioma cambiado a: ' + lang);
+    }
+</script>
+
+
+</body>
+</html>
